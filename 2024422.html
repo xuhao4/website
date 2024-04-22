@@ -1,0 +1,28 @@
+<script>
+let a = {id:'D10755563',name:"John Smith"};
+let b = {};
+a ["age"] = 12;
+
+document.write(a["id"] + "<br>");
+document.write(a["name"] + "<br>");
+//search by key is fast
+//search by value is slow
+
+for (let key in b)
+document.write("key =" + key +",value=" +b[key] + "<br>" );
+document.write(b.length + "<br>");
+b ["id"]=62321;
+document.write(b.id + "<br>");
+delete b["id"];//b.id=62321
+document.write(b.id + "<br>");
+</script>
+
+Use associate to create a name space
+<script>
+let x;
+var My = {
+	writeln:function(){document.writeln(x + "<br>")},
+	x:1
+}
+My.writeln("abc");
+</script>
