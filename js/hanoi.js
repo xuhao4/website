@@ -128,7 +128,6 @@ let kftext="@keyframes diskmoveK{0%{left:X;top:Y}\n30%{left:X;top:0px}\n70%{left
     disk.style.top=y1;
 }
 tower(N);
-movedisk(0);
-
+function startgame(){movedisk(0);
 for(let i=1;i<instructions.length;i++)
-setTimeout('movedisk('+i+')',i*1010);
+setTimeout('movedisk('+i+')',i*1010);}
